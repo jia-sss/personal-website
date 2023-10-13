@@ -13,10 +13,12 @@ onMounted(() => {
 <template>
     <main>
         <div class="rainbow">
-            我不知道这个网站要干什么。。。
+            <span>我不知道这个网站要干什么。。。</span>
         </div>
-        <p style="font-size: 25px;font-family: b;">提个建议。</p>
-        <div id="comment"></div>
+        <div class="comment">
+            <p style="font-size: 25px; font-family: b">提个建议。</p>
+            <div id="comment"></div>
+        </div>
     </main>
 </template>
 <style>
@@ -43,11 +45,14 @@ onMounted(() => {
     -webkit-text-fill-color: transparent;
     animation: hue 6s infinite;
 
-    font-size: 70px;
+    font-size: 5rem;
     text-align: center;
-    height: 200px;
-    line-height: 200px;
+    min-height: 260px;
     font-family: d;
+    white-space: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @keyframes hue {
     from {
@@ -56,5 +61,9 @@ onMounted(() => {
     to {
         filter: hue-rotate(360deg);
     }
+}
+.comment {
+    max-width: 760px;
+    margin: auto;
 }
 </style>
