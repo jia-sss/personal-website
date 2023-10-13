@@ -4,7 +4,7 @@ import { onMounted } from 'vue'
 onMounted(() => {
     // @ts-ignore
     twikoo.init({
-        envId: 'https://website-comment-server.vercel.app',
+        envId: 'https://pinglun.jiaoo.cc',
         el: '#comment'
     })
 })
