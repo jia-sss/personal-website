@@ -18,6 +18,7 @@ onMounted(() => {
         <div class="comment">
             <p style="font-size: 25px; font-family: b">提个建议。</p>
             <div id="comment"></div>
+            <span id="twikoo_visitors">0</span>
         </div>
     </main>
 </template>
